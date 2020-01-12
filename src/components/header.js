@@ -10,7 +10,6 @@ function Header() {
   var liStyle = {display: "inline-block", marginRight: "30px", fontSize: "18px"}
   return (
     <>
-    <div className="container">
     <Router>
       <div>
       <p style={{display: "inline-block", marginRight: "10px", color: "#663333", fontSize: "30px"}}>Damini Ganesh </p>
@@ -41,7 +40,6 @@ function Header() {
         </Switch>
       </div>
     </Router>
-    </div>
     </>
     );
 }
