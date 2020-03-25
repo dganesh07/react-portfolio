@@ -6,6 +6,8 @@ import {
   Link
 } from "react-router-dom";
 
+import Timeline from './Timeline';
+
 function Header() {
   var liStyle = {display: "inline-block", marginRight: "30px", fontSize: "18px"}
   return (
@@ -19,7 +21,7 @@ function Header() {
               <Link style={{ textDecoration: 'none', color: "#663333"}} to="/">About</Link>
             </li>
             <li style={liStyle}>
-              <Link style={{ textDecoration: 'none', color: "#663333"}} to="/about">Technologies</Link>
+              <Link style={{ textDecoration: 'none', color: "#663333"}} to="/timeline">Cove tool timeline</Link>
             </li>
             <li style={liStyle}>
               <Link style={{ textDecoration: 'none' , color: "#663333"}} to="/users">Contact Me</Link>
@@ -31,8 +33,8 @@ function Header() {
           <Route path="/about">
             <p>hello2</p>
           </Route>
-          <Route path="/users">
-            <p>hello1</p>
+          <Route path="/timeline">
+          <Timeline />
           </Route>
           <Route path="/">
             <p>hello</p>

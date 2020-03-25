@@ -7,10 +7,6 @@ function App() {
   return(
     <div className='container'>
     <Header />
-    <Technologies />
-    <Technologies />
-    <Technologies />
-    <Technologies />
     </div>
   )
 }
