@@ -14,17 +14,17 @@ function Header() {
     <>
     <Router>
       <div>
-      <p style={{display: "inline-block", marginRight: "10px", color: "#663333", fontSize: "30px"}}>Damini Ganesh </p>
+      <p style={{display: "inline-block", marginRight: "10px", color: "#DAA520", fontSize: "30px"}}>Damini Ganesh </p>
         <nav style={{float: "right"}}>
           <ul>
             <li style={liStyle}>
-              <Link style={{ textDecoration: 'none', color: "#663333"}} to="/">About</Link>
+              <Link style={{ textDecoration: 'none', color: "#DAA520"}} to="/">About</Link>
             </li>
             <li style={liStyle}>
-              <Link style={{ textDecoration: 'none', color: "#663333"}} to="/timeline">Cove tool timeline</Link>
+              <Link style={{ textDecoration: 'none', color: "#DAA520"}} to="/timeline">Cove tool timeline</Link>
             </li>
             <li style={liStyle}>
-              <Link style={{ textDecoration: 'none' , color: "#663333"}} to="/users">Contact Me</Link>
+              <Link style={{ textDecoration: 'none' , color: "#DAA520"}} to="/users">Contact Me</Link>
             </li>
           </ul>
         </nav>
