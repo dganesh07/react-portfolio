@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+        "header": "The First Task",
+        "description": "Increased the font size of a <p> tag",
+        "date": "June 2018"
+    },
+    {
+        "id": 2,
+        "header": "LEED",
+        "description": "Atfer the first few months of getting to know the code base and fixing minor bugs, The first major feature I took on was LEED(Leadership in Energy and Environmental Design) points",
+        "moreDescription": "",
+        "date": "June 2018"
+    },
+    {
+        "id": 3,
+        "header": "BreadCrumbs",
+        "description": "Navigation for the whole tool",
+        "date": "June 2018"
+    },
+    {
+        "id": 4,
+        "header": "Mixed Use",
+        "description": "bluh bluh bluh",
+        "date": "June 2018"
+    },
+    {
+        "id": 5,
+        "header": "React.js Set Up",
+        "description": "bluh bluh bluh",
+        "date": "June 2018"
+    },
+    {
+        "id": 6,
+        "header": "Three.js",
+        "description": "bluh bluh bluh",
+        "date": "June 2018"
+    },
+    {
+        "id": 7,
+        "header": "EBRIK",
+        "description": "npm package",
+        "date": "June 2018"
+    },
+    {
+        "id": 8,
+        "header": "converting to react.js",
+        "description": "bluh bluh bluh",
+        "date": "June 2018"
+    },
+    {
+        "id": 9,
+        "header": "#999th PR",
+        "description": "bluh bluh bluh",
+        "date": "June 2018"
+    },
+    {
+        "id": 10,
+        "header": "Sales admin dashboard",
+        "description": "react training",
+        "date": "June 2018"
+    },
+    {
+        "id": 11,
+        "header": "Brute force Algorithm",
+        "description": "bluh bluh bluh",
+        "date": "June 2018"
+    }
+]
