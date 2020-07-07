@@ -13,17 +13,22 @@ function Hero() {
     background: white;
   `;
   const Name = styled.section`
-    font-size: 80px;
+    font-size: 30px;
   `;
   return (
     <Wrapper>
       <div className="row" style={{ color: "black", marginLeft: 50 }}>
         <Name className="col-md-6">
-          <img src={name} />
+          <span>nckdsvskdvjbflskjvbslfkvkdfvbnkn</span>
+          <br />
+          <span>nckdsvskdvjbflskjvbslfkvkdfvbnknsvfsgs!</span>
+          <div style={{ marginTop: 150, marginLeft: 100 }}>
+            <img src={name} />
+          </div>
         </Name>
 
         <div className="col-md-6">
-          <img src={face2} style={{width: 500, height: 500}}/>
+          <img src={face2} style={{ width: 500, height: 500 }} />
         </div>
       </div>
     </Wrapper>

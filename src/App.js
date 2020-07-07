@@ -12,14 +12,14 @@ function App() {
     <>
       <div className="">
         <Header />
-        <Sidenav>
-          <Sidenav.Body>
-            <FaLinkedinIn />
-          </Sidenav.Body>
-          <Sidenav.Body>
-            <AiFillGithub />
-          </Sidenav.Body>
-        </Sidenav>
+          <Sidenav>
+            <Sidenav.Body>
+              <FaLinkedinIn />
+            </Sidenav.Body>
+            <Sidenav.Body>
+              <AiFillGithub />
+            </Sidenav.Body>
+          </Sidenav>
       </div>
     </>
   );
