@@ -4,16 +4,22 @@ import Technologies from "./components/technologies";
 import "./templates/styles.scss";
 import { Sidenav } from "rsuite";
 
+import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
+
 function App() {
   return (
     <>
       <div className="">
         <Header />
         <Sidenav>
-        <Sidenav.Body>Dashboard</Sidenav.Body>
-        <Sidenav.Body>sdak</Sidenav.Body>
-        <Sidenav.Body>Daskjdhfkjhboard</Sidenav.Body>
-      </Sidenav>
+          <Sidenav.Body>
+            <FaLinkedinIn />
+          </Sidenav.Body>
+          <Sidenav.Body>
+            <AiFillGithub />
+          </Sidenav.Body>
+        </Sidenav>
       </div>
     </>
   );
