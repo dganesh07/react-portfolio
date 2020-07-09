@@ -71,9 +71,6 @@ function Header() {
             <Route path="/timeline">
               <Timeline />
             </Route>
-            <Route path="/">
-              <Hero />
-            </Route>
           </Switch>
         </div>
       </Router>

@@ -4,6 +4,10 @@ import face from "../animation.gif";
 import face2 from "../dams_herself.svg";
 import name from "../dams_name.svg";
 
+import { Sidenav } from "rsuite";
+
+import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
 function Hero() {
   let coder = "<CODER>";
 
@@ -22,13 +26,13 @@ function Hero() {
           <span>nckdsvskdvjbflskjvbslfkvkdfvbnkn</span>
           <br />
           <span>nckdsvskdvjbflskjvbslfkvkdfvbnknsvfsgs!</span>
-          <div style={{ marginTop: 150, marginLeft: 100 }}>
+          <div style={{ marginTop: 150, marginLeft: 100, width: 650 }}>
             <img src={name} />
           </div>
         </Name>
 
         <div className="col-md-6">
-          <img src={face2} style={{ width: 500, height: 500 }} />
+          <img src={face2} style={{ width: 500, height: 550 }} />
         </div>
       </div>
     </Wrapper>

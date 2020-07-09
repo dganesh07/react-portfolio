@@ -7,19 +7,14 @@ import { Sidenav } from "rsuite";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
+import Hero from "./components/Hero";
+
 function App() {
   return (
     <>
       <div className="">
         <Header />
-          <Sidenav>
-            <Sidenav.Body>
-              <FaLinkedinIn />
-            </Sidenav.Body>
-            <Sidenav.Body>
-              <AiFillGithub />
-            </Sidenav.Body>
-          </Sidenav>
+        <Hero />
       </div>
     </>
   );
