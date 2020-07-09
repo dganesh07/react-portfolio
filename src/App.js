@@ -8,6 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
 import Hero from "./components/Hero";
+import Timeline from "./components/Timeline";
 
 function App() {
   return (
@@ -15,6 +16,12 @@ function App() {
       <div className="">
         <Header />
         <Hero />
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <Timeline />
       </div>
     </>
   );

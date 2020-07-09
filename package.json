@@ -15,7 +15,9 @@
     "react-icons": "^3.10.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
+    "react-tabs": "^3.1.1",
     "react-vertical-timeline-component": "^2.5.0",
+    "react-web-tabs": "^1.0.1",
     "rsuite": "^4.7.5",
     "styled-components": "^5.1.1"
   },
