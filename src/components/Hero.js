@@ -13,7 +13,6 @@ function Hero() {
 
   const Wrapper = styled.section`
     border: 1px solid white;
-    height: 500px;
     background: white;
   `;
   const Name = styled.section`
@@ -26,7 +25,7 @@ function Hero() {
           <span>nckdsvskdvjbflskjvbslfkvkdfvbnkn</span>
           <br />
           <span>nckdsvskdvjbflskjvbslfkvkdfvbnknsvfsgs!</span>
-          <div style={{ marginTop: 150, marginLeft: 100, width: 650 }}>
+          <div style={{ marginTop: 250, marginLeft: 120, width: 750, marginBottom: 100 }}>
             <img src={name} />
           </div>
         </Name>

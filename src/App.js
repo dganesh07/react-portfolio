@@ -16,12 +16,9 @@ function App() {
       <div className="">
         <Header />
         <Hero />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <Timeline />
+        <div>
+          <Timeline />
+        </div>
       </div>
     </>
   );

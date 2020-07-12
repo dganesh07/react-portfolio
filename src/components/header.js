@@ -68,9 +68,7 @@ function Header() {
             <Route path="/about">
               <p>hello</p>
             </Route>
-            <Route path="/timeline">
-              
-            </Route>
+         
           </Switch>
         </div>
       </Router>
