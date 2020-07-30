@@ -7,8 +7,10 @@ import "react-vertical-timeline-component/style.min.css";
 import icon from "./icon.png";
 import timelineData from "../data/timelineData.json";
 
-import { Tab, TabPanel, Tabs, TabList } from "react-web-tabs";
-import "react-web-tabs/dist/react-web-tabs.css";
+// import { Tab, TabPanel, Tabs, TabList } from "react-web-tabs";
+// import "react-web-tabs/dist/react-web-tabs.css";
+
+import TabComponent from "../tabs/tabs";
 
 function Timeline() {
   let tempStyle = {
@@ -20,7 +22,7 @@ function Timeline() {
     webkitBoxShadow: "-9px 14px 25px 0px rgba(107,103,107,1)",
     mozBoxShadow: "-9px 14px 25px 0px rgba(107,103,107,1)",
     boxShadow: "-9px 14px 25px 0px rgba(107,103,107,1)",
-    zIndex: 1
+    zIndex: 1,
   };
 
   let timelineBox = {
@@ -33,59 +35,37 @@ function Timeline() {
   };
   return (
     <div>
-      <Tabs
-        defaultTab="vertical-tab-one"
-        vertical
-        className="vertical-tabs row"
-      >
-        <TabList className="col-md-6" style={tempStyle}>
-          <Tab tabFor="vertical-tab-one">Cove Tool</Tab>
-          <Tab tabFor="vertical-tab-two">Illinois Institute of Technology</Tab>
-        </TabList>
-
-        <TabPanel tabId="vertical-tab-one">
-          <div style={timelineBox}>
-            <VerticalTimeline>
-              {timelineData.map((item) => {
-                return (
-                  <VerticalTimelineElement
-                    key={item.id}
-                    style={{ marginTop: "30px", marginBottom: "30px" }}
-                    className="vertical-timeline-element--work"
-                    contentStyle={{
-                      background: "rgb(33, 150, 243)",
-                      color: "#fff",
-                      padding: 10,
-                    }}
-                    contentArrowStyle={{
-                      borderRight: "7px solid  rgb(33, 150, 243)",
-                    }}
-                    date={item.date}
-                    iconStyle={{
-                      background: "rgb(33, 150, 243)",
-                      color: "#fff",
-                      width: "40px",
-                      height: "40px",
-                      left: "51%",
-                    }}
-                  >
-                    <h4 className="vertical-timeline-element-title">
-                      {item.header}
-                    </h4>
-                    <p>{item.description}</p>
-                  </VerticalTimelineElement>
-                );
-              })}
-            </VerticalTimeline>
-          </div>
-        </TabPanel>
-
-        <TabPanel tabId="vertical-tab-two">
-          <p style={timelineBox}>
-            Tab content
-          </p>
-        </TabPanel>
-      </Tabs>
+      <VerticalTimeline>
+        {timelineData.map((item) => {
+          return (
+            <VerticalTimelineElement
+              key={item.id}
+              style={{ marginTop: "30px", marginBottom: "30px" }}
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                background: "rgb(33, 150, 243)",
+                color: "#fff",
+                padding: 10,
+              }}
+              contentArrowStyle={{
+                borderRight: "7px solid  rgb(33, 150, 243)",
+              }}
+              date={item.date}
+              iconStyle={{
+                background: "rgb(33, 150, 243)",
+                color: "#fff",
+                width: "40px",
+                height: "40px",
+                left: "51%",
+              }}
+            >
+              <h4 className="vertical-timeline-element-title">{item.header}</h4>
+              <p>{item.description}</p>
+            </VerticalTimelineElement>
+          );
+        })}
+      </VerticalTimeline>
+      ;
     </div>
   );
 }
