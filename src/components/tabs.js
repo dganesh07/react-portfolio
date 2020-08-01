@@ -7,7 +7,7 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 
-import Timeline from "../components/Timeline";
+import Timeline from "./Timeline";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -72,9 +72,7 @@ export default function TabComponent() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <div style={{ height: 500,  overflow: "scroll"}}>
-          <Timeline />
-        </div>
+        sdffgf
       </TabPanel>
       <TabPanel value={value} index={1}>
         Item Two

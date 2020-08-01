@@ -10,7 +10,7 @@ import timelineData from "../data/timelineData.json";
 // import { Tab, TabPanel, Tabs, TabList } from "react-web-tabs";
 // import "react-web-tabs/dist/react-web-tabs.css";
 
-import TabComponent from "../tabs/tabs";
+import TabComponent from "./tabs";
 
 function Timeline() {
   let tempStyle = {

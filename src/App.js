@@ -8,7 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
 import Hero from "./components/Hero";
-import TabComponent from "./tabs/tabs"
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -16,9 +16,7 @@ function App() {
       <div className="">
         <Header />
         <Hero />
-        <div style={{width: 800, height: 800}}>
-          <TabComponent />
-        </div>
+        <Experience />
       </div>
     </>
   );
