@@ -7,7 +7,10 @@ import name from "../dams_name.svg";
 import { Sidenav } from "rsuite";
 
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaStackOverflow } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
+
 function Hero() {
   let coder = "<CODER>";
 
@@ -20,17 +23,40 @@ function Hero() {
   `;
   return (
     <Wrapper>
-      <div className="row" style={{ color: "black", marginLeft: 50 }}>
+      <div className="row" style={{ color: "black" }}>
+        <div
+          className="col-md-1"
+          style={{
+            maxWidth: "50px",
+            textAlign: "end",
+            position: "absolute",
+            bottom: 10,
+            fontSize: 20,
+            marginLeft: 5,
+          }}
+        >
+          <FaLinkedinIn style={{ marginBottom: 25 }} />
+          <AiFillGithub style={{ marginBottom: 25 }} />
+          <FaStackOverflow style={{ marginBottom: 25 }} />
+          <MdEmail style={{ marginBottom: 25 }} />
+        </div>
         <Name className="col-md-6">
           <span>nckdsvskdvjbflskjvbslfkvkdfvbnkn</span>
           <br />
           <span>nckdsvskdvjbflskjvbslfkvkdfvbnknsvfsgs!</span>
-          <div style={{ marginTop: 250, marginLeft: 120, width: 750, marginBottom: 100 }}>
+          <div
+            style={{
+              marginTop: 250,
+              marginLeft: 120,
+              width: 750,
+              marginBottom: 100,
+            }}
+          >
             <img src={name} />
           </div>
         </Name>
 
-        <div className="col-md-6">
+        <div className="col-md-5">
           <img src={face2} style={{ width: 500, height: 550 }} />
         </div>
       </div>
