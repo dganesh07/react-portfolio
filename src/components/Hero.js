@@ -4,8 +4,6 @@ import face from "../animation.gif";
 import face2 from "../dams_herself.svg";
 import name from "../dams_name.svg";
 
-import { Sidenav } from "rsuite";
-
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaStackOverflow } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
@@ -16,13 +14,22 @@ function Hero() {
 
   const Wrapper = styled.section`
     border: 1px solid white;
-    background: white;
   `;
   const Name = styled.section`
     font-size: 30px;
   `;
+  const Color = styled.section`
+    background-color: grey
+  `;
   return (
     <Wrapper>
+      <div className="row">
+        <div style={{ marginLeft: 35, fontSize: 20 }}>
+          <span>nckdsvskdvjbflskjvbslfkvkdfvbnkn</span>
+          <br />
+          <span>nckdsvskdvjbflskjvbslfkvkdfvbnknsvfsgs!</span>
+        </div>
+      </div>
       <div className="row" style={{ color: "black" }}>
         <div
           className="col-md-1"
@@ -40,10 +47,8 @@ function Hero() {
           <FaStackOverflow style={{ marginBottom: 25 }} />
           <MdEmail style={{ marginBottom: 25 }} />
         </div>
+        
         <Name className="col-md-6">
-          <span>nckdsvskdvjbflskjvbslfkvkdfvbnkn</span>
-          <br />
-          <span>nckdsvskdvjbflskjvbslfkvkdfvbnknsvfsgs!</span>
           <div
             style={{
               marginTop: 250,
@@ -56,8 +61,8 @@ function Hero() {
           </div>
         </Name>
 
-        <div className="col-md-5">
-          <img src={face2} style={{ width: 500, height: 550 }} />
+        <div className="col-md-5" style={{ zIndex: -1 }}>
+          <img src={face2} style={{ width: 500, height: 550, zIndex: -1 }} />
         </div>
       </div>
     </Wrapper>

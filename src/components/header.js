@@ -28,6 +28,7 @@ function Header() {
                 src={logo}
                 style={{
                   margin: 5,
+                  marginLeft: 20,
                   width: 75,
                   paddingLeft: 10,
                   paddingTop: 15,

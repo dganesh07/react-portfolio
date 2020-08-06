@@ -22,9 +22,9 @@ function Experience() {
       <div className="">
         <VisibilitySensor once>
           {({ isVisible }) => (
-            <Spring delay={200} to={{ marginRight: isVisible ? '0px' : '1000px'}}>
+            <Spring delay={200} to={{ opacity: isVisible ? 1 : 0 }}>
               {({ opacity }) => (
-                <div style={{ opacity }}>
+                <div className="col-md-6" style={{ opacity }}>
                   <TabComponent />
                 </div>
               )}
