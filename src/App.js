@@ -5,6 +5,7 @@ import "./templates/styles.scss";
 
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Testimonils from "./components/Testimonils";
 import Experience from "./components/Experience";
 import { Hidden } from "@material-ui/core";
 
@@ -21,6 +22,7 @@ function App() {
         <About />
         <hr/>
         <Experience />
+        <Testimonils/>
       </div>
     </>
   );
