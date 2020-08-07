@@ -1,10 +1,8 @@
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { TransitionGroup } from "react-transition-group";
 import { CSSTransition } from "react-transition-group";
 import "../styles.scss";
 import { IoIosArrowForward } from "react-icons/io";
-
-
 
 export function Carousel(props) {
   const [items, setItems] = useState(props.items);
@@ -12,8 +10,8 @@ export function Carousel(props) {
   const [active, setActive] = useState(props.active);
 
   useEffect(() => {
-    setItems(props.items)
-  })
+    setItems(props.items);
+  });
 
   const generateItems = () => {
     var local = [];
@@ -38,10 +36,14 @@ export function Carousel(props) {
   };
 
   return (
-    <div id="carousel" className="noselect">
-      <CSSTransition transitionName={direction}>{generateItems}</CSSTransition>
-      <div className="arrow arrow-right" onClick={moveRight}>
-        <IoIosArrowForward/>
+    <div className="container">
+      <div id="carousel" className="noselect">
+        <CSSTransition transitionName={direction}>
+          {generateItems}
+        </CSSTransition>
+        <div className="arrow arrow-right" onClick={moveRight}>
+          <IoIosArrowForward />
+        </div>
       </div>
     </div>
   );
@@ -49,5 +51,9 @@ export function Carousel(props) {
 
 function Item({ id, level }) {
   const className = "item level" + level;
-  return <div className={className}>{id}</div>;
+  return (
+    <div className={className}>
+    {id}
+    </div>
+  );
 }
