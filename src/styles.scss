@@ -1,11 +1,5 @@
 #carousel {
-  height: 500px;
-  width: 810px;
   margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
 }
 
 .arrow {
@@ -52,8 +46,9 @@ $level2-left: 50px;
   height: $level0-height;
   width: $level0-width;
   //line-height: $level0-height;
+  color: black;
   font-size: 13px;
-  background-color: #6796e5;
+  background-color: white;
   left: $level-2-left + $level2-width;
 }
 
@@ -62,7 +57,8 @@ $level2-left: 50px;
   width: $level0-width;
   //line-height: $level0-height;
   font-size: 13px;
-  background-color: #4ec9e1;
+  background-color: white;
+  color: black;
   left: $level0-left;
 }
 

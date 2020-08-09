@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Timeline from "./Timeline";
 import Hero from "./Hero";
 
-import logo from "../dams_logo.png";
+import logo from "../dams_logo_blue.png";
 
 function Header() {
   var liStyle = {

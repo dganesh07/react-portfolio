@@ -19,10 +19,11 @@ function App() {
       <div className="" style={{ overflowX: "hidden" }}>
         <Header />
         <Hero />
+        <hr />
         <About />
-        <hr/>
+        <hr />
         <Experience />
-        <Testimonils/>
+        <Testimonils />
       </div>
     </>
   );
