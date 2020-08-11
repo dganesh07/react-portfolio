@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TabComponent from "./tabs";
 import styled from "styled-components";
 import img from "../java.png";
+import Skills from "./Skills";
 
 import { Spring } from "react-spring/renderprops";
 import VisibilitySensor from "react-visibility-sensor";
@@ -19,7 +20,12 @@ function Experience() {
         <div className="col-md-6" style={{ height: 500 }}>
           <TabComponent />
         </div>
-        <div className="col-md-6" style={{ height: 500 }}></div>
+        <div
+          className="col-md-6"
+          style={{ height: 500, backgroundImage: `url(${img})` }}
+        >
+          <Skills />
+        </div>
       </div>
     </ExperienceWrapper>
   );
