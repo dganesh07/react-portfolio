@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { TransitionGroup } from "react-transition-group";
 import { CSSTransition } from "react-transition-group";
 import "../styles.scss";
 import { IoIosArrowForward } from "react-icons/io";
@@ -39,23 +38,37 @@ export function Carousel(props) {
 
   return (
     <>
-      <CSSTransition transitionName={direction}>{generateItems}</CSSTransition>
-      <div className="arrow arrow-right" onClick={moveRight}>
-        <IoIosArrowForward />
+      <div style={{ backgroundColor: "rgb(27, 20, 100, 0.3)", height: 465 }}>
+        <CSSTransition transitionName={direction}>
+          {generateItems}
+        </CSSTransition>
+        <div className="arrow arrow-right" onClick={moveRight}>
+          <IoIosArrowForward />
+        </div>
       </div>
     </>
   );
 }
 
+const thexecuteOnClick = (isExpanded, setIsStyleClass) => {
+  if (isExpanded) {
+    setIsStyleClass(true)
+  } else {
+    setIsStyleClass(false)
+  }
+};
+
 function Item({ id, level }) {
+  const [isStyleClass, setIsStyleClass] = useState(false);
   const className = "item level" + level;
   return (
-    <div className={className}>
+    <div className={isStyleClass ? "show-more " + className : className}>
       <ShowMoreText
-        lines={3}
+        lines={10}
         more="Show more"
         less="Show less"
         anchorClass=""
+        onClick={(isExpanded) => thexecuteOnClick(isExpanded, setIsStyleClass)}
         expanded={false}
         width={450}
       >

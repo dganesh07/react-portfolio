@@ -12,7 +12,7 @@
   font-size: 80px;
   color: black;
   line-height: 30px;
-  margin-top: 0px;
+  margin-top: 170px;
   z-index: 1000;
 }
 
@@ -38,9 +38,13 @@ $level0-width: 400px;
 $level-2-left: 750px;
 $level-1-left: 500px;
 
-$level0-left: 150px;
+$level0-left: 185px;
 $level1-left: 180px;
 $level2-left: 50px;
+
+.show-more {
+  margin-top: 10px !important;
+}
 
 .level-1 {
   height: $level0-height;
@@ -48,8 +52,10 @@ $level2-left: 50px;
   //line-height: $level0-height;
   color: black;
   font-size: 13px;
-  background-color: white;
+  //background-color: white;
+  background-color: "rgb(27, 20, 100, 0.3)";
   left: $level-2-left + $level2-width;
+  margin-top: 100px;
 }
 
 .level0 {
@@ -57,9 +63,11 @@ $level2-left: 50px;
   width: $level0-width;
   //line-height: $level0-height;
   font-size: 13px;
-  background-color: white;
+  //background-color: white;
+  background-color: "rgb(27, 20, 100, 0.3)";
   color: black;
   left: $level0-left;
+  margin-top: 100px;
 }
 
 .left-enter {

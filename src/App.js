@@ -25,6 +25,7 @@ function App() {
         <Experience />
         <hr />
         <Testimonils />
+        <hr/>
       </div>
     </>
   );
