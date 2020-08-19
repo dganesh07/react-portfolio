@@ -23,6 +23,7 @@ function App() {
         <About />
         <hr />
         <Experience />
+        <hr />
         <Testimonils />
       </div>
     </>

@@ -4,6 +4,8 @@ import { CSSTransition } from "react-transition-group";
 import "../styles.scss";
 import { IoIosArrowForward } from "react-icons/io";
 
+import ShowMoreText from "react-show-more-text";
+
 export function Carousel(props) {
   const [items, setItems] = useState(props.items);
   const [direction, setDirection] = useState("");
@@ -36,16 +38,12 @@ export function Carousel(props) {
   };
 
   return (
-    <div className="container">
-      <div id="carousel" className="noselect">
-        <CSSTransition transitionName={direction}>
-          {generateItems}
-        </CSSTransition>
-        <div className="arrow arrow-right" onClick={moveRight}>
-          <IoIosArrowForward />
-        </div>
+    <>
+      <CSSTransition transitionName={direction}>{generateItems}</CSSTransition>
+      <div className="arrow arrow-right" onClick={moveRight}>
+        <IoIosArrowForward />
       </div>
-    </div>
+    </>
   );
 }
 
@@ -53,7 +51,20 @@ function Item({ id, level }) {
   const className = "item level" + level;
   return (
     <div className={className}>
-    {id}
+      <ShowMoreText
+        lines={3}
+        more="Show more"
+        less="Show less"
+        anchorClass=""
+        expanded={false}
+        width={450}
+      >
+        <span
+          dangerouslySetInnerHTML={{
+            __html: id,
+          }}
+        />
+      </ShowMoreText>
     </div>
   );
 }
