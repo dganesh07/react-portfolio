@@ -9,26 +9,25 @@ import { FaStackOverflow } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 
-function Hero() {
-  let coder = "<CODER>";
+import Header from "./header";
 
+function Hero() {
   const Wrapper = styled.section`
     border: 1px solid white;
   `;
   const Name = styled.section`
     font-size: 30px;
   `;
-  const Color = styled.section`
-    background-color: grey
-  `;
   return (
     <Wrapper>
-      <div className="row">
-        <div style={{ marginLeft: 35, fontSize: 20 }}>
-          <span>nckdsvskdvjbflskjvbslfkvkdfvbnkn</span>
-          <br />
-          <span>nckdsvskdvjbflskjvbslfkvkdfvbnknsvfsgs!</span>
-        </div>
+      <div className="" style={{ position: "fixed", top: 0, width: "100%" }}>
+        <Header />
+      </div>
+      <br />
+      <div style={{ marginLeft: 35, fontSize: 20, padding: 40}}>
+        <span>nckdsvskdvjbflskjvbslfkvkdfvbnkn</span>
+        <br />
+        <span>nckdsvskdvjbflskjvbslfkvkdfvbnknsvfsgs!</span>
       </div>
       <div className="row" style={{ color: "black" }}>
         <div
@@ -47,7 +46,7 @@ function Hero() {
           <FaStackOverflow style={{ marginBottom: 25 }} />
           <MdEmail style={{ marginBottom: 25 }} />
         </div>
-        
+
         <Name className="col-md-6">
           <div
             style={{

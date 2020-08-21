@@ -4,6 +4,7 @@ function About() {
   return (
     <div
       className="container"
+      id="about"
       style={{
         backgroundColor: "rgb(27, 20, 100, 0.3)",
         color: "black",

@@ -17,7 +17,6 @@ function App() {
   return (
     <>
       <div className="" style={{ overflowX: "hidden" }}>
-        <Header />
         <Hero />
         <hr />
         <About />
