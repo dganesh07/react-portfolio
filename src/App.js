@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Testimonils from "./components/Testimonils";
 import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import { Hidden } from "@material-ui/core";
 
 import Timeline from "./components/Timeline";
@@ -22,9 +23,8 @@ function App() {
         <About />
         <hr />
         <Experience />
-        <hr />
-        {/* <Testimonils />
-        <hr/> */}
+        {/* <Testimonils /> */}
+        <Footer />
       </div>
     </>
   );

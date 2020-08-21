@@ -53,6 +53,7 @@ function Header() {
                 textDecoration: "none",
                 color: "Black",
                 fontFamily: "Times New Roman, Times, serif",
+                fontSize: 15,
               }}
               to="about"
               smooth={true}
@@ -67,6 +68,7 @@ function Header() {
                 textDecoration: "none",
                 color: "Black",
                 fontFamily: "Times New Roman, Times, serif",
+                fontSize: 15,
               }}
               to="experience"
               smooth={true}
@@ -81,6 +83,7 @@ function Header() {
                 textDecoration: "none",
                 color: "Black",
                 fontFamily: " Times New Roman, Times, serif",
+                fontSize: 15,
               }}
               to="testimonials"
               smooth={true}

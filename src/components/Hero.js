@@ -24,7 +24,7 @@ function Hero() {
         <Header />
       </div>
       <br />
-      <div style={{ marginLeft: 35, fontSize: 20, padding: 40}}>
+      <div style={{ marginLeft: 35, fontSize: 20, padding: 40 }}>
         <span>nckdsvskdvjbflskjvbslfkvkdfvbnkn</span>
         <br />
         <span>nckdsvskdvjbflskjvbslfkvkdfvbnknsvfsgs!</span>
@@ -39,12 +39,24 @@ function Hero() {
             bottom: 10,
             fontSize: 20,
             marginLeft: 5,
+            zIndex: 100,
           }}
         >
-          <FaLinkedinIn style={{ marginBottom: 25 }} />
-          <AiFillGithub style={{ marginBottom: 25 }} />
-          <FaStackOverflow style={{ marginBottom: 25 }} />
-          <MdEmail style={{ marginBottom: 25 }} />
+          <a href="https://www.linkedin.com/in/daminiganesh/" target="_blank">
+            <FaLinkedinIn style={{ marginBottom: 25 }} />
+          </a>
+          <a href="https://github.com/dganesh07" target="_blank">
+            <AiFillGithub style={{ marginBottom: 25 }} />
+          </a>
+          <a
+            href="https://stackoverflow.com/users/10261635/damini-ganesh"
+            target="_blank"
+          >
+            <FaStackOverflow style={{ marginBottom: 25 }} />
+          </a>
+          <a href="mailto:damini.ganesh@gmail.com" target="_blank">
+            <MdEmail style={{ marginBottom: 25 }} />
+          </a>
         </div>
 
         <Name className="col-md-6">
@@ -54,6 +66,7 @@ function Hero() {
               marginLeft: 120,
               width: 750,
               marginBottom: 100,
+              zIndex: -1,
             }}
           >
             <img src={name} />
