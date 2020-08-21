@@ -24,8 +24,8 @@ function App() {
         <hr />
         <Experience />
         <hr />
-        <Testimonils />
-        <hr/>
+        {/* <Testimonils />
+        <hr/> */}
       </div>
     </>
   );

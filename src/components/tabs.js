@@ -73,55 +73,63 @@ export default function SimpleTabs() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
+        <h4>Full Stack Developer, June 2018 - PRESENT</h4>{" "}
+        <br/>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          Developed and updated features for the web-based SaaS platform using
+          Django-python stack which aided in a more useful and accurate
+          optimization of results. Spear headed the integration of React for a
+          faster rendering web app, dynamic data display, and an easy to access
+          interface with a consistent look and feel.
         </p>
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-        officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua.
         <p>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur
+          Collaborated with teams for feature ideas, algorithms and technology
+          selections, sprint planning, code reviews with git, and deployment
+          utilizing AWS ECS and docker images.Documented the existing software
+          architecture for new recruits to understand the software’s modules and
+          components without digging into the code.
         </p>
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-        officia deserunt mollit anim id est laborum.
+        <p>
+          Trained new employees (Developers) on the architecture and process
+          used at Cove.tool.Implemented automated testing for features using
+          pytest to reduce bugs encountered during behavioral testing. Built
+          sales admin dashboard and a wide range of tools for internal use
+          including npm packages for reusing react components and API code.
+        </p>
       </TabPanel>
       <TabPanel value={value} index={1}>
+        <h4>JavaScript Developer, June 2017 - May 2018</h4>
+        <br />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Optimized and refined features to aid university wide launch of
+          Planon, a global IWMS software tool. Customized the application to
+          make it suitable and efficient for back-end users as well as front-end
+          staff and faculty.
+          <p>
+            Updated user issue forms using ES6, HTML5, JS validation and DOM
+            Manipulation for clear, concise, and responsive UI. Elected
+            algorithm for sorting user issues based on priority.
+          </p>
         </p>
+        <h4>Tech Administrator, January 2017 – April 2017</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Assisted students, faculty, and staff with technology issues by
+          providing technical support via Issue tracking system Troubleshooted
+          issues via phone calls, emails and face-to-face walk-in consultations.
         </p>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        <h4>UrbanAfriq</h4>
+        <a href="https://www.urbanafriq.com/">www.urbanafriq.com</a>
+        <br />
+        <br />
+        <p>
+          Developed an e-commerce website with Wordpress, jQuery and CSS;
+          Customized the website theme and style to meet clients needs. Worked
+          with woocommerce and many more Wordpress plugins for product pages.
+          Set-up Stripe API for easy payment method and hosted the website using
+          goDaddy.
+        </p>
       </TabPanel>
     </div>
   );

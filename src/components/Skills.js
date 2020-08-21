@@ -10,8 +10,8 @@ const Skills = () => {
   const { size, opacity, ...rest } = useSpring({
     ref: springRef,
     config: config.stiff,
-    from: { size: "15%", background: "red" },
-    to: { size: open ? "100%" : "15%", background: open ? "white" : "red" },
+    from: { size: "15%", background: "white" },
+    to: { size: open ? "100%" : "15%", background: open ? "white" : "white" },
   });
 
   const transRef = useRef();
@@ -39,10 +39,11 @@ const Skills = () => {
         Skills
         {transitions.map(({ item, key, props }) => (
           <Item key={key} style={{ ...props, background: item.css }}>
-            <span dangerouslySetInnerHTML=
-            {{
-              __html: item.data,
-            }}></span>
+            <span
+              dangerouslySetInnerHTML={{
+                __html: item.data,
+              }}
+            ></span>
           </Item>
         ))}
       </Container>
