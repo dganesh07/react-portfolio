@@ -26,9 +26,25 @@ function Hero({ isSticky }) {
       <Navbar sticky={isSticky} />
       <br />
       <div style={{ marginLeft: 35, fontSize: 20, padding: 40 }}>
-        <span>nckdsvskdvjbflskjvbslfkvkdfvbnkn</span>
+        <span
+          style={{
+            textDecoration: "none",
+            fontFamily: "Times New Roman, Times, serif",
+            fontSize: 20,
+          }}
+        >
+          Welcome to my portfolio!
+        </span>
         <br />
-        <span>nckdsvskdvjbflskjvbslfkvkdfvbnknsvfsgs!</span>
+        <span
+          style={{
+            textDecoration: "none",
+            fontFamily: "Times New Roman, Times, serif",
+            fontSize: 20,
+          }}
+        >
+          I design, develope and test using a wide varity of technologies.
+        </span>
       </div>
       <div className="row" style={{ color: "black" }}>
         <div
