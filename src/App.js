@@ -10,17 +10,18 @@ import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import { Hidden } from "@material-ui/core";
 
-import Timeline from "./components/Timeline";
+import useSticky from "./components/useSticky.js"
 
 import styled from "styled-components";
 
 function App() {
+  const { isSticky, element } = useSticky()
   return (
     <>
       <div className="" style={{ overflowX: "hidden" }}>
-        <Hero />
+        <Hero isSticky={isSticky}/>
         <hr />
-        <About />
+        <About element={element}/>
         <hr />
         <Experience />
         <Testimonils />

@@ -1,8 +1,9 @@
 import React from "react";
 
-function About() {
+function About({ element }) {
   return (
     <div
+      ref={element}
       className=""
       id="about"
       style={{

@@ -1,0 +1,54 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2.5rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbar-sticky {
+  background: #1B1464;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  animation: moveDown 0.5s ease-in-out;
+}
+
+.navbar--link-item-sticky{
+  color: white;
+}
+
+.navbar--logo-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar--link {
+  display: flex;
+  list-style: none;
+}
+
+.navbar--link-item {
+  margin: 0.4rem 1rem 0 0;
+  padding: 0 0.3rem;
+  cursor: pointer;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}
+
+.navbar--logo {
+  width: 75px;
+  padding-left: 10px;
+  padding-bottom: 25px;
+}

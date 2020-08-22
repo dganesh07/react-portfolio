@@ -9,11 +9,10 @@ import { FaStackOverflow } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 
-import Header from "./header";
-
 import { useMediaQuery } from "react-responsive";
+import Navbar from "./Navbar";
 
-function Hero() {
+function Hero({ isSticky }) {
   const Wrapper = styled.section`
     border: 1px solid white;
   `;
@@ -21,11 +20,10 @@ function Hero() {
     font-size: 30px;
   `;
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
   return (
     <Wrapper>
-      <div className="" style={{ position: "fixed", top: 0, width: "100%" }}>
-        <Header />
-      </div>
+      <Navbar sticky={isSticky} />
       <br />
       <div style={{ marginLeft: 35, fontSize: 20, padding: 40 }}>
         <span>nckdsvskdvjbflskjvbslfkvkdfvbnkn</span>
