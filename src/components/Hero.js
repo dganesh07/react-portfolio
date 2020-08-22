@@ -11,6 +11,8 @@ import { MdEmail } from "react-icons/md";
 
 import Header from "./header";
 
+import { useMediaQuery } from "react-responsive";
+
 function Hero() {
   const Wrapper = styled.section`
     border: 1px solid white;
@@ -18,6 +20,7 @@ function Hero() {
   const Name = styled.section`
     font-size: 30px;
   `;
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <Wrapper>
       <div className="" style={{ position: "fixed", top: 0, width: "100%" }}>
@@ -69,13 +72,18 @@ function Hero() {
               zIndex: -1,
             }}
           >
-            <img src={name} />
+            <img
+              src={name}
+              style={{ width: "100%", maxWidth: 750, height: "auto" }}
+            />
           </div>
         </Name>
 
-        <div className="col-md-5" style={{ zIndex: -1 }}>
-          <img src={face2} style={{ width: 500, height: 550, zIndex: -1 }} />
-        </div>
+        {!isTabletOrMobile && (
+          <div className="col-md-5" style={{ zIndex: -1 }}>
+            <img src={face2} style={{ width: 500, height: 550, zIndex: -1 }} />
+          </div>
+        )}
       </div>
     </Wrapper>
   );

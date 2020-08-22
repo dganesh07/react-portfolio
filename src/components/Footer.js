@@ -10,48 +10,16 @@ const Footer = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
-            <h5 className="title">Links</h5>
-            <ul>
-              <li className="">
-                <a
-                  href="#!"
-                  style={{
-                    background:
-                      "-webkit-linear-gradient(#FFC75F, #FF9671, #FF5391)",
-                    webkitBackgroundClip: "text",
-                    webkitTextFillColor: "transparent",
-                  }}
-                >
-                  Resume
-                </a>
-              </li>
-              <li className="list-unstyled">
-                <a
-                  href="#!"
-                  style={{
-                    background:
-                      "-webkit-linear-gradient(#FFC75F, #FF9671, #FF5391)",
-                    webkitBackgroundClip: "text",
-                    webkitTextFillColor: "transparent",
-                  }}
-                >
-                  Link 2
-                </a>
-              </li>
-              <li className="list-unstyled">
-                <a
-                  href="#!"
-                  style={{
-                    background:
-                      "-webkit-linear-gradient(#FFC75F, #FF9671, #FF5391)",
-                    webkitBackgroundClip: "text",
-                    webkitTextFillColor: "transparent",
-                  }}
-                >
-                  Link 3
-                </a>
-              </li>
-            </ul>
+            <h1
+              style={{
+                background:
+                  "-webkit-linear-gradient(#FFC75F, #FF9671, #FF5391)",
+                webkitBackgroundClip: "text",
+                webkitTextFillColor: "transparent",
+              }}
+            >
+              If you’d like to get in touch — email me
+            </h1>
           </MDBCol>
         </MDBRow>
       </MDBContainer>

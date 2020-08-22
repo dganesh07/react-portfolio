@@ -2,6 +2,7 @@ import React from "react";
 
 import Timeline from "./Timeline";
 import Hero from "./Hero";
+import { useMediaQuery } from "react-responsive";
 
 import logo from "../dams_logo_blue.png";
 import { Link } from "react-scroll";
@@ -16,6 +17,7 @@ function Header() {
     color: "#000",
     letterSpacing: "-.018rem",
   };
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
   return (
     <>
       <div
@@ -45,55 +47,57 @@ function Header() {
         </a>{" "}
       </div>
 
-      <nav style={{ float: "right", marginTop: 30 }}>
-        <ul>
-          <li style={liStyle}>
-            <Link
-              style={{
-                textDecoration: "none",
-                color: "Black",
-                fontFamily: "Times New Roman, Times, serif",
-                fontSize: 15,
-              }}
-              to="about"
-              smooth={true}
-              duration={350}
-            >
-              ABOUT
-            </Link>
-          </li>
-          <li style={liStyle}>
-            <Link
-              style={{
-                textDecoration: "none",
-                color: "Black",
-                fontFamily: "Times New Roman, Times, serif",
-                fontSize: 15,
-              }}
-              to="experience"
-              smooth={true}
-              duration={350}
-            >
-              EXPERIENCE
-            </Link>
-          </li>
-          <li style={liStyle}>
-            <Link
-              style={{
-                textDecoration: "none",
-                color: "Black",
-                fontFamily: " Times New Roman, Times, serif",
-                fontSize: 15,
-              }}
-              to="testimonials"
-              smooth={true}
-              duration={350}
-            >
-              TESTIMONIALS
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      {!isTabletOrMobile && (
+        <nav style={{ float: "right", marginTop: 30 }}>
+          <ul>
+            <li style={liStyle}>
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: "Black",
+                  fontFamily: "Times New Roman, Times, serif",
+                  fontSize: 15,
+                }}
+                to="about"
+                smooth={true}
+                duration={350}
+              >
+                ABOUT
+              </Link>
+            </li>
+            <li style={liStyle}>
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: "Black",
+                  fontFamily: "Times New Roman, Times, serif",
+                  fontSize: 15,
+                }}
+                to="experience"
+                smooth={true}
+                duration={350}
+              >
+                EXPERIENCE
+              </Link>
+            </li>
+            <li style={liStyle}>
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: "Black",
+                  fontFamily: " Times New Roman, Times, serif",
+                  fontSize: 15,
+                }}
+                to="testimonials"
+                smooth={true}
+                duration={350}
+              >
+                TESTIMONIALS
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      )}
     </>
   );
 }
