@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel } from "./Carousel";
+import ShowMoreText from "react-show-more-text";
 
 function Testimonils() {
   var items = [
@@ -29,7 +29,6 @@ function Testimonils() {
     campus-wide. As an added bonus, Damini brings her wonderful charisma and sense of humor to our office, \
     which has helped her to built relationships quickly with others and to help foster a personable and friendly environment.",
 
-  
     "Dion Manly <br> Senior Leader in Operational Excellence <br> Illinois Institute of Technology <br> \
     In just over 4 months, Damini has made an impact that simply <br> can’t be overstated. Beginning with her interview, <br> \
     she demonstrated her aptitude for problem solving by diagnosing <br> and addressing a technical issue for our \
@@ -37,10 +36,32 @@ function Testimonils() {
     it to implement complex <br> algorithms to manage billing, priorities, and a host of other system variables designed to improve our operational efficiency. She has successfully navigated a number of technical issues that have surfaced, and often develops creative programming solutions to achieve our objectives. The work Damini has done will positively impact the delivery of facilities services for the entire IIT community for years to come!",
   ];
   return (
-    <div className="container">
+    <div className="">
       <h1>Testimonils</h1>
       <br />
-      <Carousel items={items} active={0} />
+      <div className="row">
+        {items.map((item) => (
+          <div className="col-md-4">
+            <ShowMoreText
+              lines={10}
+              more="Show more"
+              less="Show less"
+              anchorClass=""
+              // onClick={(isExpanded) =>
+              //   thexecuteOnClick(isExpanded, setIsStyleClass)
+              // }
+              expanded={false}
+              width={450}
+            >
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: item,
+                }}
+              />
+            </ShowMoreText>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

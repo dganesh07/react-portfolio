@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TabComponent from "./tabs";
 import styled from "styled-components";
-import img from "../test_img.png";
+import img from "../Graphic_image.png";
 import Skills from "./Skills";
 
 import { Spring } from "react-spring/renderprops";

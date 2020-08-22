@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <div
-      className="container"
+      className=""
       id="about"
       style={{
         backgroundColor: "rgb(27, 20, 100, 0.3)",
