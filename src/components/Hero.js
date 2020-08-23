@@ -59,19 +59,32 @@ function Hero({ isSticky }) {
             zIndex: 100,
           }}
         >
-          <a href="https://www.linkedin.com/in/daminiganesh/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/daminiganesh/"
+            target="_blank"
+            style={{ color: "#1B1464" }}
+          >
             <FaLinkedinIn style={{ marginBottom: 25 }} />
           </a>
-          <a href="https://github.com/dganesh07" target="_blank">
+          <a
+            href="https://github.com/dganesh07"
+            target="_blank"
+            style={{ color: "#1B1464" }}
+          >
             <AiFillGithub style={{ marginBottom: 25 }} />
           </a>
           <a
             href="https://stackoverflow.com/users/10261635/damini-ganesh"
             target="_blank"
+            style={{ color: "#1B1464" }}
           >
             <FaStackOverflow style={{ marginBottom: 25 }} />
           </a>
-          <a href="mailto:damini.ganesh@gmail.com" target="_blank">
+          <a
+            href="mailto:damini.ganesh@gmail.com"
+            target="_blank"
+            style={{ color: "#1B1464" }}
+          >
             <MdEmail style={{ marginBottom: 25 }} />
           </a>
         </div>

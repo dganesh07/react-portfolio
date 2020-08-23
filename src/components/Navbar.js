@@ -81,18 +81,18 @@ const Navbar = ({ sticky }) => (
             : "navbar--link-item"
         }
       >
-        {/* <Link
+        <Link
           style={{
             textDecoration: "none",
             fontFamily: " Times New Roman, Times, serif",
             fontSize: 15,
           }}
-          to="testimonials"
+          to="projects"
           smooth={true}
           duration={350}
         >
-          TESTIMONIALS
-        </Link> */}
+          PROJECTS
+        </Link>
       </li>
     </ul>
   </nav>
