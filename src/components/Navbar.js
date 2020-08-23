@@ -81,7 +81,7 @@ const Navbar = ({ sticky }) => (
             : "navbar--link-item"
         }
       >
-        <Link
+        {/* <Link
           style={{
             textDecoration: "none",
             fontFamily: " Times New Roman, Times, serif",
@@ -92,7 +92,7 @@ const Navbar = ({ sticky }) => (
           duration={350}
         >
           TESTIMONIALS
-        </Link>
+        </Link> */}
       </li>
     </ul>
   </nav>

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import ShowMoreText from "react-show-more-text";
+import "../styles.scss";
 
 function Testimonils() {
   var items = [
@@ -34,32 +35,52 @@ function Testimonils() {
     Senior Systems  Administrator. Once we hired her, she quickly got up to speed in JavaScript and has been using \
     it to implement complex  algorithms to manage billing, priorities, and a host of other system variables designed to improve our operational efficiency. She has successfully navigated a number of technical issues that have surfaced, and often develops creative programming solutions to achieve our objectives. The work Damini has done will positively impact the delivery of facilities services for the entire IIT community for years to come!",
   ];
+  const [isStyleClass, setIsStyleClass] = useState(null);
+
+  const thexecuteOnClick = (isExpanded, setIsStyleClass, key) => {
+    if (isExpanded) {
+      setIsStyleClass(key);
+    } else {
+      setIsStyleClass(null);
+    }
+  };
+
   return (
-    <div className="" style={{ backgroundColor: "rgb(27, 20, 100, 0.3)", height: 500 }}>
+    <div
+      id="testimonials"
+      style={{ backgroundColor: "rgb(27, 20, 100, 0.3)", height: 550 }}
+    >
       <h1>Testimonils</h1>
-      <br />
       <div className="row">
-        <div className="col-md-2"></div>
-        {items.map((item, key) => (
-          <div className="col-md-3" style={{textAlign: "center"}} key={key}>
-            <ShowMoreText
-              lines={8}
-              more="Show more"
-              less="Show less"
-              anchorClass=""
-              // onClick={(isExpanded) =>
-              //   thexecuteOnClick(isExpanded, setIsStyleClass)
-              // }
-              expanded={false}
+        <div className="col-md-1"></div>
+        {items.map((item, key) => {
+          return (
+            <div
+              className={
+                isStyleClass === key ? "show-more col-md-4" : "col-md-3"
+              }
+              style={{ textAlign: "center", fontSize: 12 }}
+              key={key}
             >
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: item,
-                }}
-              />
-            </ShowMoreText>
-          </div>
-        ))}
+              <ShowMoreText
+                lines={8}
+                more="Show more"
+                less="Show less"
+                anchorClass=""
+                onClick={(isExpanded) =>
+                  thexecuteOnClick(isExpanded, setIsStyleClass, key)
+                }
+                expanded={false}
+              >
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: item,
+                  }}
+                />
+              </ShowMoreText>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
