@@ -17,7 +17,7 @@ function Experience() {
   return (
     <ExperienceWrapper id="experience">
       <div className="row" style={{ paddingLeft: 20, paddingRight: 20 }}>
-        <div className="col-md-6" style={{ height: 500 }}>
+        <div className="col-md-6">
           <TabComponent />
         </div>
         <div

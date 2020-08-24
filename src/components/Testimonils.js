@@ -35,13 +35,13 @@ function Testimonils() {
     Senior Systems  Administrator. Once we hired her, she quickly got up to speed in JavaScript and has been using \
     it to implement complex  algorithms to manage billing, priorities, and a host of other system variables designed to improve our operational efficiency. She has successfully navigated a number of technical issues that have surfaced, and often develops creative programming solutions to achieve our objectives. The work Damini has done will positively impact the delivery of facilities services for the entire IIT community for years to come!",
   ];
-  const [isStyleClass, setIsStyleClass] = useState(null);
+  const [isStyleKey, setIsStyleKey] = useState(null);
 
-  const thexecuteOnClick = (isExpanded, setIsStyleClass, key) => {
+  const thexecuteOnClick = (isExpanded, setIsStyleKey, key) => {
     if (isExpanded) {
-      setIsStyleClass(key);
+      setIsStyleKey(key);
     } else {
-      setIsStyleClass(null);
+      setIsStyleKey(null);
     }
   };
 
@@ -56,9 +56,7 @@ function Testimonils() {
         {items.map((item, key) => {
           return (
             <div
-              className={
-                isStyleClass === key ? "show-more col-md-4" : "col-md-3"
-              }
+              className={isStyleKey === key ? "show-more col-md-4" : "col-md-3"}
               style={{ textAlign: "center", fontSize: 12 }}
               key={key}
             >
@@ -68,9 +66,9 @@ function Testimonils() {
                 less="Show less"
                 anchorClass=""
                 onClick={(isExpanded) =>
-                  thexecuteOnClick(isExpanded, setIsStyleClass, key)
+                  thexecuteOnClick(isExpanded, setIsStyleKey, key)
                 }
-                expanded={false}
+                expanded={key != isStyleKey ? false : true}
               >
                 <span
                   dangerouslySetInnerHTML={{
