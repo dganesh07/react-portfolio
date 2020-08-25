@@ -11,8 +11,20 @@ import { Container } from "@material-ui/core";
 function Experience() {
   const ExperienceWrapper = styled.section`
     border: 1px solid white;
-    height: 670px;
   `;
+
+  const skillsBoxStyle = {
+    width: "100%",
+    backgroundImage: `url(${img})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    webkitBackgroundSize: "cover",
+    mozBackgroundSize: "cover",
+    oBackgroundSize: "cover",
+    backgroundSize: "cover",
+    top: 0,
+    overflow: "hidden",
+  };
 
   return (
     <ExperienceWrapper id="experience">
@@ -20,10 +32,7 @@ function Experience() {
         <div className="col-md-6">
           <TabComponent />
         </div>
-        <div
-          className="col-md-6"
-          style={{ height: 500, backgroundImage: `url(${img})` }}
-        >
+        <div className="col-md-6" style={skillsBoxStyle}>
           <Skills />
         </div>
       </div>

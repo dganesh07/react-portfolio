@@ -31,7 +31,7 @@ const Skills = () => {
   ]);
 
   return (
-    <>
+    <div style={{ height: 500 }}>
       <Container
         style={{ ...rest, width: size, height: size, paddingTop: 25 }}
         onClick={() => set((open) => !open)}
@@ -47,7 +47,7 @@ const Skills = () => {
           </Item>
         ))}
       </Container>
-    </>
+    </div>
   );
 };
 

@@ -9,6 +9,7 @@ const Container = styled(animated.div)`
   padding: 25px;
   background: black;
   border-radius: 5px;
+  border: 0.5px solid #FFC75F;
   cursor: pointer;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.05);
   will-change: width, height;
@@ -16,7 +17,6 @@ const Container = styled(animated.div)`
 
 const Item = styled(animated.div)`
   width: 100%;
-  height: 80%;
   background: white;
   border-radius: 5px;
   padding-top: 25px;
