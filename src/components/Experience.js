@@ -38,7 +38,7 @@ function Experience() {
       >
         <div
           className={isTabletOrMobile ? "col-md-12" : "col-md-6"}
-          style={{ height: 500, overflow: "scroll",  }}
+          style={{ height: 550, overflow: "scroll",  }}
         >
           <TabComponent />
         </div>
