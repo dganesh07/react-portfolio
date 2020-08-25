@@ -4,14 +4,14 @@ import styled from "styled-components";
 import img from "../Graphic_image.png";
 import Skills from "./Skills";
 
-import { Spring } from "react-spring/renderprops";
-import VisibilitySensor from "react-visibility-sensor";
-import { Container } from "@material-ui/core";
+import { useMediaQuery } from "react-responsive";
 
 function Experience() {
   const ExperienceWrapper = styled.section`
     border: 1px solid white;
   `;
+
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   const skillsBoxStyle = {
     width: "100%",
@@ -28,11 +28,24 @@ function Experience() {
 
   return (
     <ExperienceWrapper id="experience">
-      <div className="row" style={{ paddingLeft: 20, paddingRight: 20 }}>
-        <div className="col-md-6">
+      <div
+        className="row"
+        style={{
+          paddingLeft: 20,
+          paddingRight: 20,
+          display: isTabletOrMobile ? "block" : "flex",
+        }}
+      >
+        <div
+          className={isTabletOrMobile ? "col-md-12" : "col-md-6"}
+          style={{ height: 500, overflow: "scroll",  }}
+        >
           <TabComponent />
         </div>
-        <div className="col-md-6" style={skillsBoxStyle}>
+        <div
+          className={isTabletOrMobile ? "col-md-12" : "col-md-6"}
+          style={skillsBoxStyle}
+        >
           <Skills />
         </div>
       </div>
