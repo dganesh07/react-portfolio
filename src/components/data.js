@@ -25,14 +25,7 @@ export default [
       name: 'Ripe Malinka',
       description: '#f093fb → #f5576c',
       css: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-      data: 'Front-End Dev',
-      height: 200
-    },
-    {
-      name: 'Perfect White',
-      description: '#fdfbfb → #ebedee',
-      css: 'linear-gradient(135deg, #E3FDF5 0%, #FFE6FA 100%)',
-      data: 'Back-End Dev',
+      data: 'Front/Back-End',
       height: 200
     },
     {
@@ -50,17 +43,17 @@ export default [
       height: 200
     },
     {
+      name: 'Perfect White',
+      description: '#fdfbfb → #ebedee',
+      css: 'linear-gradient(135deg, #E3FDF5 0%, #FFE6FA 100%)',
+      data: 'Familiar with..',
+      height: 200
+    },
+    {
       name: 'Ladoga Bottom',
       description: '#ebc0fd → #d9ded8',
       css: 'linear-gradient(135deg, #ebc0fd 0%, #d9ded8 100%)',
-      data: `JavaScript (jQuery) <br> React.js <br> HTML5 <br> SCSS`,
-      height: 500
-    },
-    {
-      name: 'Sunny Morning',
-      description: '#f6d365 → #fda085',
-      css: 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)',
-      data: `Python (Django) <br> Java`,
+      data: `JavaScript (jQuery) <br> React.js <br> Python (Django) <br> HTML5 <br> SCSS <br> Java`,
       height: 500
     },
     {
@@ -74,8 +67,15 @@ export default [
       name: 'Salt Mountain',
       description: ' #FFFEFF → #D7FFFE',
       css: 'linear-gradient(135deg, #FFFEFF 0%, #D7FFFE 100%)',
-      data: `Git <br> AWS (S3, ECS, EC2) <br> Visual Studio`,
+      data: `Git <br> AWS (S3, ECS, EC2) <br> Visual Studio <br> Rollbar`,
       height: 200
-    }
+    },
+    {
+      name: 'Sunny Morning',
+      description: '#f6d365 → #fda085',
+      css: 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)',
+      data: `Ember.js <br> Vue.js <br> C++ <br> Three.js <br> Pandas`,
+      height: 500
+    },
   ]
   

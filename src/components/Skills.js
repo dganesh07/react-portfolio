@@ -36,7 +36,7 @@ const Skills = () => {
         style={{ ...rest, width: size, height: size, paddingTop: 25 }}
         onClick={() => set((open) => !open)}
       >
-        Skills
+        <p style={{fontWeight: 600, fontFamily: 'initial', fontSize: 21}}>Skills</p>
         {transitions.map(({ item, key, props }) => (
           <Item key={key} style={{ ...props, background: item.css }}>
             <span
