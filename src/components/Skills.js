@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { useTransition, useSpring, useChain, config } from "react-spring";
 import { Container, Item } from "./skills_styles";
 import data from "./data";
+import { GiClick } from "react-icons/gi";
 
 const Skills = () => {
   const [open, set] = useState(false);
@@ -36,7 +37,9 @@ const Skills = () => {
         style={{ ...rest, width: size, height: size, paddingTop: 25 }}
         onClick={() => set((open) => !open)}
       >
-        <p style={{fontWeight: 600, fontFamily: 'initial', fontSize: 21}}>Skills</p>
+        <p style={{ fontWeight: 600, fontFamily: "initial", fontSize: 21 }}>
+          Skills {!open && <GiClick />}
+        </p>
         {transitions.map(({ item, key, props }) => (
           <Item key={key} style={{ ...props, background: item.css }}>
             <span
