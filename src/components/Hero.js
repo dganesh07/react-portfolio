@@ -43,7 +43,7 @@ function Hero({ isSticky }) {
             fontSize: 20,
           }}
         >
-          I design, develope and test using a wide varity of technologies.
+          I design, develope and test using a wide varity of technologies. pol·y·glot.
         </span>
       </div>
       <div className="row" style={{ color: "black" }}>

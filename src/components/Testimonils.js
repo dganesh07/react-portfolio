@@ -47,7 +47,8 @@ function Testimonils() {
             key={index}
             className="slider-content"
             style={{
-              background: `url('${item.image}') no-repeat center center`,
+              //background: `url('${item.image}') no-repeat center center`,
+              backgroundColor: "rgb(27, 20, 100, 0.3)",
             }}
           >
             <div className="center inner">

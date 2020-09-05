@@ -1,5 +1,6 @@
 import React from "react";
-import img1 from "../Graphic_image.png";
+//import img1 from "../Graphic_image.png";
+import img1 from "../Project_bg.png";
 import "../projects.scss";
 const Projects = () => {
   return (
@@ -8,7 +9,7 @@ const Projects = () => {
       <div class="" style={{paddingLeft: 20, paddingRight: 20}}>
         <h1>Projects</h1>
         <div class="row no-gutters">
-          <div class="col-lg-3">
+          <div class="col-md-3" style={{width: '307px !important'}}>
             <a
               class="portfolio-item"
               href="https://github.com/dganesh07/BuyOrSell"

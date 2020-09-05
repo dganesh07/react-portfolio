@@ -6,13 +6,12 @@ $primary: #1b1464 !default;
   display: block;
   position: relative;
   overflow: hidden;
-  max-width: 530px;
+  max-width: 307px;
   margin: auto auto 1rem;
   .caption {
     display: flex;
     height: 100%;
     width: 100%;
-    background-color: fade-out($gray-900, 0.9);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -26,12 +25,12 @@ $primary: #1b1464 !default;
       }
       p {
         font-weight: 300;
-        font-size: 1rem;
+        font-size: 0.85rem;
       }
     }
   }
   @media (min-width: 992px) {
-    max-width: none;
+    max-width: 307px;
     margin: 0;
     .caption {
       -webkit-transition: -webkit-clip-path 0.25s ease-out,
