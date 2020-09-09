@@ -21,9 +21,11 @@ function Hero({ isSticky }) {
   `;
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
+
   return (
     <Wrapper>
-      <Navbar sticky={isSticky} />
+
+      {!isTabletOrMobile && <Navbar sticky={isSticky} />}
       <br />
       <div style={{ marginLeft: 35, fontSize: 20, padding: 40 }}>
         <span
@@ -92,9 +94,12 @@ function Hero({ isSticky }) {
         <Name className="col-md-6">
           <div
             style={{
-              marginTop: 250,
-              marginLeft: 120,
-              width: 750,
+              marginTop: isTabletOrMobile ? 0 : 250,
+              width: isTabletOrMobile ? 400 : 750,
+              //marginTop: 250,
+              marginLeft: isTabletOrMobile ? 50 : 120,
+              //marginLeft: 120,
+              //width: 750,
               marginBottom: 100,
               zIndex: -1,
             }}

@@ -7,7 +7,8 @@ const Projects = () => {
     //TODO: Make it a map and reuse code
     <section class="content-section" id="projects">
       <div class="" style={{paddingLeft: 20, paddingRight: 20}}>
-        <h1>Projects</h1>
+        <br/>
+        <h3>Academic Projects</h3>
         <div class="row no-gutters">
           <div class="col-md-3" style={{width: '307px !important'}}>
             <a

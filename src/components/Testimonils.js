@@ -40,7 +40,8 @@ function Testimonils() {
   const [showMore, setShowMore] = useState(false);
   return (
     <div id="testimonials" style={{ paddingRight: 20, paddingLeft: 20 }}>
-      <h2>Testimonils</h2>
+      <br/>
+      <h3>Recommendations</h3>
       <Slider classNames="slider-wrapper">
         {content.map((item, index) => (
           <div

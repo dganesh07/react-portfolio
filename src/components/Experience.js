@@ -27,29 +27,33 @@ function Experience() {
   };
 
   return (
-    <ExperienceWrapper id="experience">
-      <div
-        className="row"
-        style={{
-          paddingLeft: 20,
-          paddingRight: 20,
-          display: isTabletOrMobile ? "block" : "flex",
-        }}
-      >
+    <>
+      <br />
+      <h3 style={{margin: 20}}>Experience</h3>
+      <ExperienceWrapper id="experience">
         <div
-          className={isTabletOrMobile ? "col-md-12" : "col-md-6"}
-          style={{ height: 550, overflow: "scroll",  }}
+          className="row"
+          style={{
+            paddingLeft: 20,
+            paddingRight: 20,
+            display: isTabletOrMobile ? "block" : "flex",
+          }}
         >
-          <TabComponent />
+          <div
+            className={isTabletOrMobile ? "col-md-12" : "col-md-6"}
+            style={{ height: 550, overflow: "scroll" }}
+          >
+            <TabComponent />
+          </div>
+          <div
+            className={isTabletOrMobile ? "col-md-12" : "col-md-6"}
+            style={skillsBoxStyle}
+          >
+            {!isTabletOrMobile && <Skills />}
+          </div>
         </div>
-        <div
-          className={isTabletOrMobile ? "col-md-12" : "col-md-6"}
-          style={skillsBoxStyle}
-        >
-          <Skills />
-        </div>
-      </div>
-    </ExperienceWrapper>
+      </ExperienceWrapper>
+    </>
   );
 }
 
