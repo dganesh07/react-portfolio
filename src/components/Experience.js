@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import TabComponent from "./tabs";
 import styled from "styled-components";
 import img from "../Graphic_image.png";
@@ -18,9 +18,9 @@ function Experience() {
     backgroundImage: `url(${img})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    webkitBackgroundSize: "cover",
-    mozBackgroundSize: "cover",
-    oBackgroundSize: "cover",
+    WebkitBackgroundSize: "cover",
+    MozBackgroundSize: "cover",
+    OBackgroundSize: "cover",
     backgroundSize: "cover",
     top: 0,
     overflow: "hidden",

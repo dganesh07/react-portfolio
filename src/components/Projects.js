@@ -5,21 +5,21 @@ import "../projects.scss";
 const Projects = () => {
   return (
     //TODO: Make it a map and reuse code
-    <section class="content-section" id="projects">
-      <div class="" style={{paddingLeft: 20, paddingRight: 20}}>
+    <section className="content-section" id="projects">
+      <div className="" style={{paddingLeft: 20, paddingRight: 20}}>
         <br/>
         <h3>Academic Projects</h3>
-        <div class="row no-gutters">
-          <div class="col-md-3" style={{width: '307px !important'}}>
+        <div className="row no-gutters">
+          <div className="col-md-3" style={{width: '307px !important'}}>
             <a
-              class="portfolio-item"
+              className="portfolio-item"
               href="https://github.com/dganesh07/BuyOrSell"
               target="_blank"
             >
-              <span class="caption">
-                <span class="caption-content">
+              <span className="caption">
+                <span className="caption-content">
                   <h2>BuyOrSell</h2>
-                  <p class="mb-0">
+                  <p className="mb-0">
                     An e - commerce application that is flexible, extensible and
                     reusable.
                   </p>
@@ -33,20 +33,20 @@ const Projects = () => {
                   </p>
                 </span>
               </span>
-              <img class="img-fluid" src={img1} alt="" />
+              <img className="img-fluid" src={img1} alt="" />
             </a>
           </div>
 
-          <div class="col-lg-3">
+          <div className="col-lg-3">
             <a
-              class="portfolio-item"
+              className="portfolio-item"
               href="https://github.com/dganesh07/Dealer"
               target="_blank"
             >
-              <span class="caption">
-                <span class="caption-content">
+              <span className="caption">
+                <span className="caption-content">
                   <h2>Dealer</h2>
-                  <p class="mb-0">My first application using MERN stack! </p>
+                  <p className="mb-0">My first application using MERN stack! </p>
                   <p>
                     The dealer is a simple card game which calculates <br />
                     the score based on the shuffle configuration.
@@ -63,20 +63,20 @@ const Projects = () => {
                   </p>
                 </span>
               </span>
-              <img class="img-fluid" src={img1} alt="" />
+              <img className="img-fluid" src={img1} alt="" />
             </a>
           </div>
 
-          <div class="col-lg-3">
+          <div className="col-lg-3">
             <a
-              class="portfolio-item"
+              className="portfolio-item"
               href="https://github.com/dganesh07/Object-Oriented-Design-Patterns"
               target="_blank"
             >
-              <span class="caption">
-                <span class="caption-content">
+              <span className="caption">
+                <span className="caption-content">
                   <h2>Object-Oriented Design Patterns</h2>
-                  <p class="mb-0">
+                  <p className="mb-0">
                     A Java Swing application to simulate an animal farm
                     following GOF Design Patterns to provide a general
                     repeatable solution to a commonly occurring problem in
@@ -86,20 +86,20 @@ const Projects = () => {
                   Technologies Used<p>Java,Java swings,eclipse</p>
                 </span>
               </span>
-              <img class="img-fluid" src={img1} alt="" />
+              <img className="img-fluid" src={img1} alt="" />
             </a>
           </div>
 
-          <div class="col-lg-3">
+          <div className="col-lg-3">
             <a
-              class="portfolio-item"
+              className="portfolio-item"
               href="https://github.com/dganesh07/Link-State-Routing-Algorithm"
               target="_blank"
             >
-              <span class="caption">
-                <span class="caption-content">
+              <span className="caption">
+                <span className="caption-content">
                   <h2>Link state routing algorithm</h2>
-                  <p class="mb-0">
+                  <p className="mb-0">
                     A link-state routing protocol using Dijkstra’s algorithm
                     which calculates the Open Shortest Path from source to
                     destination; including the number of hops in each route.
@@ -108,7 +108,7 @@ const Projects = () => {
                   Technologies Used<p>Java</p>
                 </span>
               </span>
-              <img class="img-fluid" src={img1} alt="" />
+              <img className="img-fluid" src={img1} alt="" />
             </a>
           </div>
         </div>

@@ -56,7 +56,7 @@ function Testimonils() {
               <h1 className={showMore ? "item-more-title" : "item-title"}>
                 {item.title}
               </h1>
-              <p className={showMore ? "item-more-paragraph" : ""}>
+              <p style={{overflow: 'scroll'}} className={showMore ? "item-more-paragraph" : ""}>
                 {showMore ? item.longDescription : item.description}
               </p>
               <button onClick={readEvent} className="testimonial-btn">

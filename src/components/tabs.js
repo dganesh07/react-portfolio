@@ -64,8 +64,7 @@ export default function SimpleTabs() {
         <Tabs
           value={value}
           onChange={handleChange}
-          variant="scrollable"
-          scrollButtons="auto"
+          scrollButtons="on"
           centered
         >
           <Tab label="Cove tool" {...a11yProps(0)} />
@@ -74,6 +73,7 @@ export default function SimpleTabs() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
+        <div>
         <h4>Full Stack Developer, June 2018 - PRESENT</h4>{" "}
         <br/>
         <p>
@@ -97,6 +97,7 @@ export default function SimpleTabs() {
           sales admin dashboard and a wide range of tools for internal use
           including npm packages for reusing react components and API code.
         </p>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <h4>JavaScript Developer, June 2017 - May 2018</h4>

@@ -15,8 +15,8 @@ const Footer = () => {
         className="footer-copyright text-center py-3"
         style={{
           background: "-webkit-linear-gradient(#FFC75F, #FF9671, #FF5391)",
-          webkitBackgroundClip: "text",
-          webkitTextFillColor: "transparent",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
           fontSize: 20,
         }}
       >
@@ -27,7 +27,7 @@ const Footer = () => {
             target="_blank"
             style={{
               textDecoration: "line-through",
-              webkitTextFillColor: "aliceblue",
+              WebkitTextFillColor: "aliceblue",
             }}
           >
             email me
@@ -39,8 +39,8 @@ const Footer = () => {
         className="footer-copyright text-center py-3"
         style={{
           background: "-webkit-linear-gradient(#FFC75F, #FF9671, #FF5391)",
-          webkitBackgroundClip: "text",
-          webkitTextFillColor: "transparent",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
           fontSize: 20,
         }}
       >
@@ -80,8 +80,8 @@ const Footer = () => {
         className="footer-copyright text-center py-3"
         style={{
           background: "-webkit-linear-gradient(#FFC75F, #FF9671, #FF5391)",
-          webkitBackgroundClip: "text",
-          webkitTextFillColor: "transparent",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
           fontSize: 10,
         }}
       >

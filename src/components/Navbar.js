@@ -1,6 +1,5 @@
 import React from "react";
 import "../navbar.scss";
-import Logo from "../dams_logo.png";
 import LogoBlue from "../dams_logo_blue.png";
 import { Link } from "react-scroll";
 import resume from "../resume.pdf";
