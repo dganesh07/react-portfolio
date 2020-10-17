@@ -4,7 +4,7 @@ import "../styles.scss";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 
-import "../test_styles.scss";
+import "../testimonils.scss";
 
 function Testimonils() {
   var content = [

@@ -1,19 +1,12 @@
 import React from "react";
-import Header from "./components/header";
-import Technologies from "./components/technologies";
 import "./templates/styles.scss";
-
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Testimonils from "./components/Testimonils";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
-import { Hidden } from "@material-ui/core";
-
 import useSticky from "./components/useSticky.js";
-
-import styled from "styled-components";
 import Scroll from "./components/Scroll";
 
 function App() {
