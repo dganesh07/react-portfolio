@@ -14,12 +14,14 @@ import { Hidden } from "@material-ui/core";
 import useSticky from "./components/useSticky.js";
 
 import styled from "styled-components";
+import Scroll from "./components/Scroll";
 
 function App() {
   const { isSticky, element } = useSticky();
   return (
     <>
       <div className="" style={{ overflowX: "hidden" }}>
+        <Scroll showBelow={250} />
         <Hero isSticky={isSticky} />
         <hr />
         <About element={element} />
