@@ -65,6 +65,7 @@ export default function SimpleTabs() {
           value={value}
           onChange={handleChange}
           scrollButtons="on"
+          variant="scrollable"
           centered
         >
           <Tab label="Cove tool" {...a11yProps(0)} />
