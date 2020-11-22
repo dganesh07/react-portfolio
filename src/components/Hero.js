@@ -2,12 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import open_image from "../dams_herself.svg";
 import name from "../dams_name.svg";
-
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaStackOverflow } from "react-icons/fa";
-import { AiFillGithub } from "react-icons/ai";
-import { MdEmail } from "react-icons/md";
-
 import { useMediaQuery } from "react-responsive";
 import Navbar from "./Navbar";
 
@@ -48,57 +42,13 @@ function Hero({ isSticky }) {
         </span>
       </div>
       <div className="row" style={{ color: "black" }}>
-        <div
-          className="col-md-1"
-          style={{
-            maxWidth: "50px",
-            textAlign: "end",
-            position: "absolute",
-            bottom: 10,
-            fontSize: 20,
-            marginLeft: 5,
-            zIndex: 100,
-          }}
-        >
-          <a
-            href="https://www.linkedin.com/in/daminiganesh/"
-            target="_blank"
-            style={{ color: "#1B1464" }}
-          >
-            <FaLinkedinIn style={{ marginBottom: 25 }} />
-          </a>
-          <a
-            href="https://github.com/dganesh07"
-            target="_blank"
-            style={{ color: "#1B1464" }}
-          >
-            <AiFillGithub style={{ marginBottom: 25 }} />
-          </a>
-          <a
-            href="https://stackoverflow.com/users/10261635/damini-ganesh"
-            target="_blank"
-            style={{ color: "#1B1464" }}
-          >
-            <FaStackOverflow style={{ marginBottom: 25 }} />
-          </a>
-          <a
-            href="mailto:damini.ganesh@gmail.com"
-            target="_blank"
-            style={{ color: "#1B1464" }}
-          >
-            <MdEmail style={{ marginBottom: 25 }} />
-          </a>
-        </div>
 
         <Name className="col-md-6">
           <div
             style={{
               marginTop: isTabletOrMobile ? 0 : 250,
               width: isTabletOrMobile ? 400 : 750,
-              //marginTop: 250,
-              marginLeft: isTabletOrMobile ? 50 : 120,
-              //marginLeft: 120,
-              //width: 750,
+              marginLeft: isTabletOrMobile ? 40 : 120,
               marginBottom: 100,
               zIndex: -1,
             }}

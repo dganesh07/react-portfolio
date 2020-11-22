@@ -1,5 +1,4 @@
 import React from "react";
-import "./templates/styles.scss";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Testimonils from "./components/Testimonils";
