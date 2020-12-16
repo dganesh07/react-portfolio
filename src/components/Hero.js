@@ -15,7 +15,7 @@ function Hero({ isSticky }) {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const isTablet = useMediaQuery({ query: "(max-width: 768px)" });
   const isMobile = useMediaQuery({ query: "(max-width: 520px)" });
-
+  console.log(isMobile)
 
   return (
     <Wrapper>
@@ -49,8 +49,8 @@ function Hero({ isSticky }) {
           <div
             style={{
               marginTop: isTablet ? 0 : 250,
-              width: isTablet ? 450 : isMobile ? 400 : 750,
-              marginLeft: isTablet ? 60 : isMobile ? 0 : 120,
+              width: isMobile ? 400 : isTablet ? 450 : 750,
+              marginLeft: isMobile ? 10 : isTablet ? 60 : 120,
               marginBottom: 100,
               zIndex: -1,
             }}

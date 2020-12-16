@@ -36,7 +36,7 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `scrollable-auto-tab-${index}`,
-    'aria-controls': `scrollable-auto-tabpanel-${index}`,
+    "aria-controls": `scrollable-auto-tabpanel-${index}`,
   };
 }
 
@@ -55,6 +55,10 @@ export default function SimpleTabs() {
     setValue(newValue);
   };
 
+  const designationStyles = {
+    fontSize: '20px'
+  }
+
   return (
     <div className={classes.root}>
       <AppBar
@@ -66,7 +70,6 @@ export default function SimpleTabs() {
           onChange={handleChange}
           scrollButtons="on"
           variant="scrollable"
-          centered
         >
           <Tab label="Cove tool" {...a11yProps(0)} />
           <Tab label="Illinois Institute Of technology" {...a11yProps(1)} />
@@ -74,65 +77,70 @@ export default function SimpleTabs() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <div>
-        <h4>Full Stack Developer, June 2018 - PRESENT</h4>{" "}
-        <br/>
-        <p>
+        <span style={designationStyles}>Full Stack Developer, June 2018 - PRESENT</span> <br />
+        <a href="https://www.cove.tools/">cove.tool</a>
+        <br /><br />
+        <span>
           Developed and updated features for the web-based SaaS platform using
           Django-python stack which aided in a more useful and accurate
           optimization of results. Spear headed the integration of React for a
           faster rendering web app, dynamic data display, and an easy to access
           interface with a consistent look and feel.
-        </p>
-        <p>
+        </span>
+        <br /> <br />
+        <span>
           Collaborated with teams for feature ideas, algorithms and technology
           selections, sprint planning, code reviews with git, and deployment
           utilizing AWS ECS and docker images.Documented the existing software
           architecture for new recruits to understand the software’s modules and
           components without digging into the code.
-        </p>
-        <p>
+        </span>
+        <br /> <br />
+        <span>
           Trained new employees (Developers) on the architecture and process
           used at Cove.tool.Implemented automated testing for features using
           pytest to reduce bugs encountered during behavioral testing. Built
           sales admin dashboard and a wide range of tools for internal use
           including npm packages for reusing react components and API code.
-        </p>
-        </div>
+        </span>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <h4>JavaScript Developer, June 2017 - May 2018</h4>
-        <br />
-        <p>
+        <span style={designationStyles}>JavaScript Developer, June 2017 - May 2018</span>
+        <br /> <br />
+        <span>
           Optimized and refined features to aid university wide launch of
           Planon, a global IWMS software tool. Customized the application to
           make it suitable and efficient for back-end users as well as front-end
           staff and faculty.
-          <p>
+          <br />
+          <span>
             Updated user issue forms using ES6, HTML5, JS validation and DOM
             Manipulation for clear, concise, and responsive UI. Elected
             algorithm for sorting user issues based on priority.
-          </p>
-        </p>
-        <h4>Tech Administrator, January 2017 – April 2017</h4>
-        <p>
+          </span>
+        </span>
+        <br /> <br />
+        <span style={designationStyles}>Tech Administrator, January 2017 – April 2017</span>
+        <br /> <br />
+        <span>
           Assisted students, faculty, and staff with technology issues by
           providing technical support via Issue tracking system Troubleshooted
           issues via phone calls, emails and face-to-face walk-in consultations.
-        </p>
+        </span>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <h4>UrbanAfriq</h4>
+        <span style={designationStyles}>UrbanAfriq</span>
+        <br/>
         <a href="https://www.urbanafriq.com/">www.urbanafriq.com</a>
         <br />
         <br />
-        <p>
+        <span>
           Developed an e-commerce website with Wordpress, jQuery and CSS;
           Customized the website theme and style to meet clients needs. Worked
           with woocommerce and many more Wordpress plugins for product pages.
           Set-up Stripe API for easy payment method and hosted the website using
           goDaddy.
-        </p>
+        </span>
       </TabPanel>
     </div>
   );
