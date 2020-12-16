@@ -13,6 +13,8 @@ function Hero({ isSticky }) {
     font-size: 30px;
   `;
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isTablet = useMediaQuery({ query: "(max-width: 768px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 520px)" });
 
 
   return (
@@ -46,9 +48,9 @@ function Hero({ isSticky }) {
         <Name className="col-md-6">
           <div
             style={{
-              marginTop: isTabletOrMobile ? 0 : 250,
-              width: isTabletOrMobile ? 400 : 750,
-              marginLeft: isTabletOrMobile ? 40 : 120,
+              marginTop: isTablet ? 0 : 250,
+              width: isTablet ? 450 : isMobile ? 350 : 750,
+              marginLeft: isTablet ? 60 : isMobile ? 20 : 120,
               marginBottom: 100,
               zIndex: -1,
             }}
