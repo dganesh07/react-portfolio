@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { useTransition, useSpring, useChain, config } from "react-spring";
 import { Container, Item } from "./skills_styles";
-import data from "./data";
+import data from "../data/skills_data";
 import { GiClick } from "react-icons/gi";
 
 const Skills = () => {

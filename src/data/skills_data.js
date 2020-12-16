@@ -29,17 +29,17 @@ export default [
       height: 200
     },
     {
-      name: 'Near Moon',
-      description: '#5ee7df → #b490ca',
-      css: 'linear-gradient(135deg, #5ee7df 0%, #b490ca 100%)',
-      data: 'DataBase',
-      height: 200
-    },
-    {
       name: 'Wild Apple',
       description: '#d299c2 → #fef9d7',
       css: 'linear-gradient(135deg, #d299c2 0%, #fef9d7 100%)',
       data: 'Applications',
+      height: 200
+    },
+    {
+      name: 'Near Moon',
+      description: '#5ee7df → #b490ca',
+      css: 'linear-gradient(135deg, #5ee7df 0%, #b490ca 100%)',
+      data: 'DataBase',
       height: 200
     },
     {
@@ -57,17 +57,17 @@ export default [
       height: 500
     },
     {
+      name: 'Salt Mountain',
+      description: ' #FFFEFF → #D7FFFE',
+      css: 'linear-gradient(135deg, #FFFEFF 0%, #D7FFFE 100%)',
+      data: `Git <br> AWS (S3, ECS, EC2, SQS) <br> Visual Studio <br> Rollbar <br> Docker`,
+      height: 200
+    },
+    {
       name: 'Lemon Gate',
       description: '#96fbc4 → #f9f586',
       css: 'linear-gradient(135deg, #96fbc4 0%, #f9f586 100%)',
       data: `MySQL <br> PostgreSQL <br> MongoDB`,
-      height: 200
-    },
-    {
-      name: 'Salt Mountain',
-      description: ' #FFFEFF → #D7FFFE',
-      css: 'linear-gradient(135deg, #FFFEFF 0%, #D7FFFE 100%)',
-      data: `Git <br> AWS (S3, ECS, EC2) <br> Visual Studio <br> Rollbar`,
       height: 200
     },
     {
