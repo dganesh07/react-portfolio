@@ -7,9 +7,12 @@ import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import useSticky from "./components/useSticky.js";
 import Scroll from "./components/Scroll";
+import workday from "./workday.png";
+import { useMediaQuery } from "react-responsive";
 
 function App() {
   const { isSticky, element } = useSticky();
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
       <div className="" style={{ overflowX: "hidden" }}>
@@ -19,7 +22,9 @@ function App() {
         <About element={element} />
         <hr />
         <Experience />
-        <Testimonils />
+        <h3 style={{ margin: 20 }}>A Typical Day</h3>
+        <img src={workday} style={{ width: "96%" }} />
+        {!isTabletOrMobile && <Testimonils />}
         <Projects />
         <Footer />
       </div>

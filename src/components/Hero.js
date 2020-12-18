@@ -49,7 +49,7 @@ function Hero({ isSticky }) {
           <div
             style={{
               marginTop: isTablet ? 0 : 250,
-              width: isMobile ? 400 : isTablet ? 450 : 750,
+              width: isMobile ? 350 : isTablet ? 450 : 750,
               marginLeft: isMobile ? 10 : isTablet ? 60 : 120,
               marginBottom: 100,
               zIndex: -1,
