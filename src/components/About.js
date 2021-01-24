@@ -13,7 +13,7 @@ function About({ element }) {
       }}
     >
       <br />
-      <h1 style={{ textAlign: "center" }}>Hi! I am a full stack developer</h1>
+      <h1 style={{ textAlign: "center" }}>Hi!</h1>
       <br />
       <div className="row">
         <div className="col-md-6">
